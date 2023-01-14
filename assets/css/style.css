@@ -1,3 +1,37 @@
-@media screen and (max-width: 576px){
-    
+header {
+    background-color: darkslategray;
+    display: flex;
+    justify-content: space-between;    
+}
+
+h1 {
+    border: red solid;
+}
+
+nav {
+    display: flex;
+    color: white;
+    border: red solid;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    border: red solid;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 5%;
+}
+
+nav a:link {
+    color: white;
+}
+
+@media screen and (max-width: 576px) {
+     
+    nav ul {
+        flex-direction: column;
+    }
 }
