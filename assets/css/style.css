@@ -1,24 +1,24 @@
+/* Added for testing, need to remove*/
+* {
+    border: red solid;
+}
+
 header {
     background-color: darkslategray;
     display: flex;
     justify-content: space-between;    
 }
 
-h1 {
-    border: red solid;
-}
-
 nav {
     display: flex;
-    color: white;
-    border: red solid;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    border: red solid;
+    justify-content: space-between;
     padding: 0;
+    width: 500px;
 }
 
 nav ul li {
@@ -27,6 +27,15 @@ nav ul li {
 
 nav a:link {
     color: white;
+}
+
+.about-me {
+    display: flex;
+}
+
+.about-me img {
+    width: 20%;
+    height: auto;
 }
 
 @media screen and (max-width: 576px) {
