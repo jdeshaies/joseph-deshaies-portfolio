@@ -82,6 +82,7 @@ section header {
     padding-right: 1%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .sample-work-large {
@@ -107,8 +108,7 @@ section header {
 }
 
 .sample-work-small {
-    position: relative;
-    width: 50%;
+    width: 48%;
     height: 20%;
     overflow: hidden;
 }
