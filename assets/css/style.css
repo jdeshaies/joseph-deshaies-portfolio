@@ -20,7 +20,7 @@ main {
 }
 
 .main-header h1 {
-    margin-left: 2%;
+    margin-left: 5%;
     font-size: xxx-large;
     color: aqua;
 }
@@ -165,6 +165,7 @@ section header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     width: 65%;
 }
 
@@ -177,6 +178,10 @@ section header {
 
     .main-header {
         margin-bottom: 3%;
+    }
+
+    .main-header h1 {
+        margin-left: 0;
     }
     
     section {
