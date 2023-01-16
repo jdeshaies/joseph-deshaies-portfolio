@@ -63,12 +63,40 @@ ul li {
     height: auto;
 }
 
-.work > * {
-    border: solid blue;
+.sample-work-large {
+    position: relative;
 }
 
-.sample-work-1 h3 {
-    border: dashed green;
+.sample-work-large h3 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border: solid black;
+    background-color: aqua;
+    width: fit-content;
+    padding: 2%;
+}
+
+.sample-work-large img {
+    width: 30%;
+}
+
+.sample-work-small {
+    position: relative;
+}
+
+.sample-work-small h3 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    border: solid black;
+    background-color: aqua;
+    width: fit-content;
+    padding: 2%;
+}
+
+.sample-work-small img {
+    width: 30%;
 }
 
 .contact-links {
@@ -96,6 +124,14 @@ ul li {
     }
 
     .about-me img {
+        width: 100%;
+    }
+
+    .sample-work-large img {
+        width: 100%;
+    }
+
+    .sample-work-small img {
         width: 100%;
     }
 
