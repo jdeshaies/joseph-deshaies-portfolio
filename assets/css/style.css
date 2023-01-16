@@ -70,7 +70,7 @@ section {
 
 .top-background h2 {
     position: absolute;
-    top: 25%;
+    top: 40%;
     right: 1%;
     border: solid black;
     background-color: aqua;
@@ -175,10 +175,6 @@ section header {
 }
 
 @media screen and (max-width: 576px) {
-
-    .main-header {
-        margin-bottom: 3%;
-    }
 
     .main-header h1 {
         margin-left: 0;
