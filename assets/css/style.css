@@ -77,6 +77,10 @@ section header {
     padding-right: 1%;
 }
 
+.work {
+    border: solid teal;
+}
+
 .sample-work {
     width: 65%;
     padding-right: 1%;
@@ -84,6 +88,7 @@ section header {
     flex-wrap: wrap;
     justify-content: space-between;
     border: solid yellow;
+    align-content: space-between;
 }
 
 .sample-work-large {
@@ -178,6 +183,9 @@ section header {
         margin-top: 0;
     }
 
+    .sample-work {
+        width: 100%;
+    }    
     .sample-work-large {
         width: 100%;
     }
