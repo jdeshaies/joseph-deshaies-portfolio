@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     width: 100%;
     /* border: red solid; */
   }
@@ -12,13 +12,13 @@ main {
     margin: 2% 0 2% 0;
 }
 
-header {
+.main-header {
     background-color: darkslategray;
     display: flex;
     justify-content: space-between;    
 }
 
-header h1 {
+.main-header h1 {
     margin-left: 2%;
 }
 
@@ -50,12 +50,14 @@ ul li {
 .about-me {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     padding: 0%;
 }
 
-.about-me > * {
+section header {
     margin: 1%;
+    border: black solid;
+    width: 40%;
+    background-color: solid blue;
 }
 
 .about-me img {
@@ -103,7 +105,6 @@ ul li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    border: solid red;
 }
 
 .contact-links ul li {
@@ -113,11 +114,29 @@ ul li {
 
 @media screen and (max-width: 576px) {
 
-    header {
+    .main-header {
+        margin-bottom: 3%;
+    }
+    
+    section {
+        border: solid black;
+        margin-bottom: 3%;
+    }
+
+    section header {
+        position: relative;
+        margin-top: -2%;
+        background-color: white;
+        padding: 0 2% 0 2%;
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    body header {
         flex-wrap: wrap;
     }
 
-    header h1 {
+    body header h1 {
         text-align: center;
         margin-top: 2%;
         margin-bottom: 0;
