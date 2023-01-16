@@ -83,6 +83,7 @@ section header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border: solid yellow;
 }
 
 .sample-work-large {
@@ -112,6 +113,7 @@ section header {
     width: 48%;
     height: 20%;
     overflow: hidden;
+    border: solid green;
 }
 
 .sample-work-small h3 {
