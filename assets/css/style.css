@@ -134,7 +134,8 @@ section header {
 .contact-links {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    width: 65%;
 }
 
 .contact-links ul li {
@@ -194,8 +195,16 @@ section header {
         width: 100%;
     }
 
+    .contact-links {
+        width: 100%;
+    }
+
     .contact-links ul {
         margin-top: 0%;
+    }
+
+    .contact-links ul li {
+        width: fit-content;
     }
 
 }
