@@ -16,6 +16,7 @@ main {
     display: flex;
     justify-content: space-between;    
     align-items: center;
+    margin-bottom: 0;
 }
 
 .main-header h1 {
@@ -59,6 +60,26 @@ section {
     flex-wrap: wrap;
     margin-bottom: 2%;
     justify-content: space-between;
+}
+
+.top-background {
+    border: solid red;
+}
+
+.top-background img {
+    max-height: 300px;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.top-background h2 {
+    position: absolute;
+    bottom: 40%;
+    right: 1%;
+    border: solid black;
+    background-color: aqua;
+    width: fit-content;
+    padding: 2%;
 }
 
 section header {
