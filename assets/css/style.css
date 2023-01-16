@@ -1,16 +1,12 @@
+
+/* Makes everything on page as wide  as container and sets the font for all text*/
 * {
     width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
-body {
-    margin: 0%;
-}
 
-main {
-    margin: 0 0 0% 0;
-}
-
+ /* Formats the top bar on the site containing name and navigation links*/ 
 .main-header {
     background-color: darkslategray;
     display: flex;
@@ -18,43 +14,39 @@ main {
     align-items: center;
     margin-bottom: 0;
 }
-
+/*Formats the name on the header*/
 .main-header h1 {
     margin-left: 5%;
     font-size: xxx-large;
     color: aqua;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-    text-align: center;
-}
-
+/*Adds a margin to each navigation link and makes the font bigger*/
 nav ul li {
     margin: 1%;
     font-size: medium;
 }
 
+/*Changes the link from blue to white*/
 nav ul li a {
     color: white;
 }
 
+/*Changes the color of the links in the navigation bar to aqua when you hover your mouse over it*/
 nav ul li a:hover {
     color: aqua;
 }
 
+/*Removes the list style of the navigation bar and centers the text of all the links on the page*/
 ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
     padding: 0;
+    text-align: center;
 }
 
-ul li {
-    margin: 5%;
-}
-
+/*Applies format to all  sections of the site (Top Image, About Me, Work, and Contact)*/
 section {
     display: flex;
     flex-wrap: wrap;
@@ -62,12 +54,14 @@ section {
     justify-content: space-between;
 }
 
+/*Stretches the photo across the top of the page underneath the main header*/
 .top-background img {
     max-height: 300px;
     overflow: hidden;
     margin-top: 0;
 }
 
+/*Adds a heading to the top image - "Check out my work below!"*/
 .top-background h2 {
     position: absolute;
     top: 40%;
@@ -78,6 +72,7 @@ section {
     padding: 2%;
 }
 
+/*Adds header to each image on the work section (Sample Work #1 - #5)*/
 section header {
     width: 30%;
     padding: 0 2% 0 0%;
@@ -86,17 +81,20 @@ section header {
     font-size: 60px;
 }
 
+/*Paragraph containing info about me is sized to be 30% of the "About Me" container*/
 .about-me p {
     width: 30%;
     margin-top: 0%;
 }
 
+/*Photo of myself is sized to be 30% of the "About Me" container*/
 .about-me img {
     width: 30%;
     height: auto;
     padding-right: 1%;
 }
 
+/*Formats the contents of the 'Work' section*/
 .sample-work {
     width: 65%;
     padding-right: 1%;
@@ -107,12 +105,14 @@ section header {
     height: 50%;
 }
 
+/*Formats the containers within the 'Work' section containing each of the work samples*/
 .sample-work div {
     border: solid gray;
     border-width: 2pt;
     height: 30%;
 }
 
+/*Formats the first work sample that is larger than the rest so it stretches across the entire sample-work container*/
 .sample-work-large {
     position: relative;
     width: 100%;
@@ -120,6 +120,7 @@ section header {
     overflow: hidden;
 }
 
+/*Formats the header of the first work sample*/
 .sample-work-large h3 {
     position: absolute;
     top: 5%;
@@ -131,12 +132,14 @@ section header {
     margin: 0;
 }
 
-.sample-work-large img {
+/*Formats the images of the work samples ot fit across each container and to remove the whitespace at the bottom of the photo*/
+.sample-work img {
     width: 100%;
-    margin: 0;
+    margin: 0%;
     display: block;
 }
 
+/*Forats the smaller work samples so that two fit on one line*/
 .sample-work-small {
     position: relative;
     margin-top: 2%;
@@ -145,6 +148,7 @@ section header {
     overflow: hidden;
 }
 
+/* Formats the headers of the four smaller work samples*/
 .sample-work-small h3 {
     position: absolute;
     top: 5%;
@@ -156,11 +160,7 @@ section header {
     margin: 0;
 }
 
-.sample-work-small img {
-    width: 100%;
-    display: block;
-}
-
+/*Formats the items in the 'Contact Me' section to be spaced evenly*/
 .contact-links {
     display: flex;
     flex-wrap: wrap;
@@ -169,28 +169,34 @@ section header {
     width: 65%;
 }
 
+/*Formats the items in the 'Contact Me' section so that everything is underlined (including the phone number) and centers the text*/
 .contact-links ul li {
     text-align: center;
     margin: 1%;
     text-decoration: underline;
 }
 
+/*Changes the color of the links in the 'Contact Me' section from blue to black*/
 .contact-links ul li a {
     color: black;
 }
 
+/*Formats the items to fit in the screen when it less than or equal to 576 pixels*/
 @media screen and (max-width: 576px) {
 
+    /*Removes the margin from the header containing my name*/
     .main-header h1 {
         margin-left: 0;
     }
     
+    /*Adds a black border around all sections (About Me, Work , and Contact) and adds a slight margin at the bottom*/
     section {
         border: solid black;
         margin-bottom: 3%;
         flex-direction: column;
     }
 
+    /*Formats the header for each section so that it has a border, is centered, and appears as a box slightly above the container*/
     section header {
         border: solid black;
         position: relative;
@@ -201,45 +207,47 @@ section header {
         text-align: center;
     }
     
+    /*Puts the header with my name and top navigation bar in a flex-wrap*/
     body header {
         flex-wrap: wrap;
     }
 
+    /*Centers the header with my name, removes the bottom margin, and adds a slight margin at the top*/
     body header h1 {
         text-align: center;
         margin-top: 2%;
         margin-bottom: 0;
     }
 
+    /*Stretches the picture of myself to fit across the entire screen (in its container)*/
     .about-me img {
         width: 100%;
     }
 
+     /*Stretches the paragraph of myself to fit across the entire screen (in its container) and removes the top margin*/
     .about-me p {
         width: 100%;
         margin-top: 0;
     }
 
+    /*Stretches the container with all of the sample work to fit across the entire screen (in its container)*/
     .sample-work {
         width: 100%;
         margin-bottom: 2%;
-    }    
-    .sample-work-large {
-        width: 100%;
-    }
+    } 
 
-    .sample-work-small img {
-        width: 100%;
-    }
-
+    /* Stretches the container with the contact links to fit across the screen*/
     .contact-links {
         width: 100%;
     }
 
+    /*Removes the margin at the top of the list containing the contact links*/
     .contact-links ul {
         margin-top: 0%;
     }
 
+
+    /*Formats the boxes containing each contact link to be the  exact size of the link inside*/
     .contact-links ul li {
         width: fit-content;
     }
