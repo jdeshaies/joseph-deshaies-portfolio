@@ -54,8 +54,8 @@ ul li {
 section {
     display: flex;
     flex-wrap: wrap;
-    /* padding: 0% 2% 0% 2%; */
     margin-bottom: 2%;
+    justify-content: space-between;
 }
 
 section header {
@@ -64,10 +64,6 @@ section header {
     text-align: right;
     border-right: solid black;
     font-size: 60px;
-}
-
-.about-me {
-    justify-content: space-between;
 }
 
 .about-me p {
@@ -81,8 +77,19 @@ section header {
     padding-right: 1%;
 }
 
+.sample-work {
+    width: 65%;
+    padding-right: 1%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .sample-work-large {
     position: relative;
+    width: 100%;
+    height: 20%;
+    border: red solid;
+    overflow: hidden;
 }
 
 .sample-work-large h3 {
@@ -96,11 +103,14 @@ section header {
 }
 
 .sample-work-large img {
-    width: 30%;
+    width: 100%;
 }
 
 .sample-work-small {
     position: relative;
+    width: 50%;
+    height: 20%;
+    overflow: hidden;
 }
 
 .sample-work-small h3 {
@@ -112,10 +122,6 @@ section header {
     width: fit-content;
     padding: 2%;
 }
-
-/* .sample-work-small img {
-    width: 30%;
-} */
 
 .contact-links {
     display: flex;
@@ -169,7 +175,7 @@ section header {
         margin-top: 0;
     }
 
-    .sample-work-large img {
+    .sample-work-large {
         width: 100%;
     }
 
