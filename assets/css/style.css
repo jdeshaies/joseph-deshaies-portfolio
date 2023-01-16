@@ -51,21 +51,32 @@ ul li {
     margin: 5%;
 }
 
-.about-me {
+section header {
+    width: 30%;
+    padding: 0 2% 0 0%;
+    text-align: right;
+    border-right: solid black;
+    font-size: 60px;
+}
+
+section {
     display: flex;
     flex-wrap: wrap;
     padding: 0%;
+    margin-bottom: 2%;
 }
 
-section header {
-    margin: 1%;
-    border: black solid;
-    width: 40%;
-    background-color: solid blue;
+.about-me {
+    justify-content: space-between;
+}
+
+.about-me p {
+    width: 30%;
+    margin-top: 0%;
 }
 
 .about-me img {
-    width: 40%;
+    width: 30%;
     height: auto;
 }
 
@@ -125,11 +136,13 @@ section header {
     section {
         border: solid black;
         margin-bottom: 3%;
+        flex-direction: column;
     }
 
     section header {
+        border: solid black;
         position: relative;
-        margin-top: -2%;
+        margin: -2% 1% 1% 1%;
         background-color: white;
         padding: 0 2% 0 2%;
         font-size: 30px;
@@ -148,6 +161,11 @@ section header {
 
     .about-me img {
         width: 100%;
+    }
+
+    .about-me p {
+        width: 100%;
+        margin-top: 0;
     }
 
     .sample-work-large img {
