@@ -172,6 +172,11 @@ section header {
 .contact-links ul li {
     text-align: center;
     margin: 1%;
+    text-decoration: underline;
+}
+
+.contact-links ul li a {
+    color: black;
 }
 
 @media screen and (max-width: 576px) {
