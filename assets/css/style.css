@@ -8,7 +8,7 @@ body {
 }
 
 main {
-    margin: 0 0 2% 0;
+    margin: 0 0 0% 0;
 }
 
 .main-header {
@@ -103,12 +103,14 @@ section header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-content: space-between;
+    align-content: flex-start;
+    height: 50%;
 }
 
 .sample-work div {
     border: solid gray;
     border-width: 2pt;
+    height: 30%;
 }
 
 .sample-work-large {
@@ -132,11 +134,12 @@ section header {
 .sample-work-large img {
     width: 100%;
     margin: 0;
-    height: fit-content;
+    display: block;
 }
 
 .sample-work-small {
     position: relative;
+    margin-top: 2%;
     width: 48%;
     height: 20%;
     overflow: hidden;
@@ -155,6 +158,7 @@ section header {
 
 .sample-work-small img {
     width: 100%;
+    display: block;
 }
 
 .contact-links {
@@ -212,6 +216,7 @@ section header {
 
     .sample-work {
         width: 100%;
+        margin-bottom: 2%;
     }    
     .sample-work-large {
         width: 100%;
