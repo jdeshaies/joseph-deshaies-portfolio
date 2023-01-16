@@ -108,6 +108,7 @@ section header {
 }
 
 .sample-work-small {
+    position: relative;
     width: 48%;
     height: 20%;
     overflow: hidden;
