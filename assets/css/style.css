@@ -59,7 +59,16 @@ ul li {
 }
 
 .about-me img {
+    width: 40%;
     height: auto;
+}
+
+.work > * {
+    border: solid blue;
+}
+
+.sample-work-1 h3 {
+    border: dashed green;
 }
 
 .contact-links {
@@ -86,5 +95,12 @@ ul li {
         margin-bottom: 0;
     }
 
+    .about-me img {
+        width: 100%;
+    }
+
+    .contact-links ul {
+        margin-top: 0%;
+    }
 
 }
