@@ -54,6 +54,11 @@ section {
     justify-content: space-between;
 }
 
+/*Allows h2 in this section to be 50% from the top of the section since it's position is absolute*/
+.top-background {
+    position: relative;
+}
+
 /*Stretches the photo across the top of the page underneath the main header*/
 .top-background img {
     max-height: 300px;
@@ -64,7 +69,7 @@ section {
 /*Adds a heading to the top image - "Check out my work below!"*/
 .top-background h2 {
     position: absolute;
-    top: 40%;
+    top: 50%;
     right: 1%;
     border: solid black;
     background-color: aqua;
@@ -182,7 +187,7 @@ section header {
 }
 
 /*Formats the items to fit in the screen when it less than or equal to 576 pixels*/
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1000px) {
 
     /*Removes the margin from the header containing my name*/
     .main-header h1 {
@@ -221,7 +226,9 @@ section header {
 
     /*Stretches the picture of myself to fit across the entire screen (in its container)*/
     .about-me img {
-        width: 100%;
+        width: 50%;
+        margin-left: 25%;
+        margin-bottom: 1%;
     }
 
      /*Stretches the paragraph of myself to fit across the entire screen (in its container) and removes the top margin*/
